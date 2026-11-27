@@ -18,10 +18,6 @@ result on the exact inputs. You can reserve some observations to check the
 relation after fitting. The returned evidence describes the finite data checked.
 Establishing a recurrence for every index requires a separate proof.
 
-The solver builds on JonesRec's `qhsolve`, including its modular linear algebra,
-support pruning, adaptive interpolation, reference selection, denominator
-clearing, CRT reconstruction and persistent per-point kernels.
-
 The mathematical interface follows [Appendix B of the AJ paper](https://github.com/rjacuna/Preprints/blob/main/aj.pdf).
 Specify how an Ore algebra acts on a module, evaluate those actions on your
 data, and reconstruct linear relations among the resulting columns. You can
@@ -276,58 +272,3 @@ Public 6_1 is about 3% slower than qhsolve; the largest Hodge case is 1.47 times
 faster in full cold time and 5.55 times faster in reconstruction plus validation.
 See [the benchmark reports and protocols](benchmarks/README.md) for input
 provenance and timing scope.
-
-## Worked examples and benchmark results
-
-The [worked SageMath notebook](examples/worked_examples.ipynb) gives the
-inputs and public calls for each example, with links to the original sources.
-The benchmark reports below provide the native timings and exact verification.
-
-Version 0.1.3 records **333 passing integration tests** and a separate **28-test
-race-protocol run**. The mathematical ports cover public examples from
-ore_algebra, SymPy, Maple gfun, the RISC Guess/qGeneratingFunctions notebooks,
-and FriCAS. Their source expressions, hashes, translated finite feature families
-and native API differences are retained in the
-[Ore/SymPy](tests/upstream_ore_inventory.json),
-[gfun](tests/upstream_gfun_inventory.json),
-[RISC](tests/upstream_risc_inventory.json) and
-[FriCAS](tests/upstream_fricas_inventory.json) inventories. Nonlinear differential,
-recurrence and functional examples use exact observable feature relations where
-appropriate. These are Hologuess compatibility tests, not claims that native
-Maple, Mathematica/RISC or FriCAS test suites were executed.
-
-All **419 DalgGuessing corpus rows** also match independent complete bounded
-operator spaces, with exact residual and held-out coefficient checks. The
-reference uses upstream Ore finite-field kernels and independent Sage CRT;
-the corpus does not supply expected operators. Input aliases and any source
-filename-bound corrections remain explicit in its manifest.
-
-The paired Hajij–Levitt-style races use fresh solver processes with libraries
-and exact inputs loaded before a common start. The original 0.1.3 and 0.1.4
-races used problem-specific grace intervals, fixed from two-sided pilots
-before reported repetitions. The Jones and FLINT races use one shared
-interval per problem class.
-A result counts only after its full bounded space matches the independent
-reference. The $\infty$ tag means the competitor was stopped at the cutoff
-with no verified answer. Its eventual completion time is unknown. This
-construction clock excludes startup and controller-side verification, so it
-differs from the earlier full-cold-process measurements. See the
-[upstream report](benchmarks/results/2026-11-26-upstream/report.md) and
-[input and verification notes](benchmarks/README.md#upstream-compatibility-and-corpus-verification).
-The [constant-coefficient recurrence races](benchmarks/results/2026-11-26-constant-recurrence-races/report.md)
-compare the FLINT default with native Ore, SymPy, and Wolfram on two SymPy test cases.
-
-In the 0.1.3 cohort, all 114 reported pairs across 38 problems finish with exact
-agreement and no censoring; calibrated N ranges from 0.5 to 5 seconds. Hologuess wins seven problem
-medians, while native Ore wins 31 and is substantially faster on larger dense
-differential cases. These generic finite-module results do not imply a universal
-speed advantage from the q-sequence refinements.
-
-Version 0.1.4 passes 390 tests and recovers all 419 corpus spaces exactly.
-All 114 race pairs match without censoring. Hologuess wins 13 of 38 problem
-medians and its order-15, degree-15 median drops from 2.146 s to 0.344 s.
-Native Ore takes 0.131 s on that case. [Full 0.1.4 report](benchmarks/results/2026-11-26-input-actions/report.md).
-
-Run the ports with `make test-upstream` and the controller checks with
-`make test-race-protocol`. Corpus preparation, verification and races have
-separate Make targets and require fresh output paths.
