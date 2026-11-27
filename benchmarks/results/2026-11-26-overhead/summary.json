@@ -1,0 +1,294 @@
+{
+  "created_utc": "2026-11-26T02:38:03.098868+00:00",
+  "platform": "macOS-26.4.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "repeats": 3,
+  "native_threads": 1,
+  "workers": 1,
+  "cold_definition": "New Sage Python process and empty in-memory kernel store for every timed run; OS filesystem caches not flushed.",
+  "heldout": "Jones stored suffix; Hodge unseen dimensions through92. Finite checks only.",
+  "comparisons": [
+    {
+      "family": "Hodge",
+      "case": "3",
+      "operators_agree": true,
+      "operator_sha256": "10c613760e03728154028e50eeb735aae4540438b2f202cb31824fa199a17984",
+      "methods": [
+        {
+          "method": "holo",
+          "repetitions": 3,
+          "process_wall_median_s": 1.6098396247252822,
+          "process_wall_min_s": 1.603059417102486,
+          "phase_medians": {
+            "imports": 1.1886788746342063,
+            "data_generation": 0.003270207904279232,
+            "detection": 0.04133329214528203,
+            "extraction": 0.023242041002959013,
+            "independent_validation": 0.0006089159287512302,
+            "algorithm_with_validation": 0.06530354171991348,
+            "worker_end_to_end": 1.2595904157496989
+          }
+        },
+        {
+          "method": "hologuess",
+          "repetitions": 3,
+          "process_wall_median_s": 1.6325719580054283,
+          "process_wall_min_s": 1.6130700828507543,
+          "phase_medians": {
+            "imports": 1.195628458634019,
+            "data_generation": 0.003198291640728712,
+            "detection": 0.00148845836520195,
+            "extraction": 0.0743519589304924,
+            "independent_validation": 0.0007878751493990421,
+            "algorithm_with_validation": 0.07662991713732481,
+            "worker_end_to_end": 1.2754082917235792
+          }
+        }
+      ]
+    },
+    {
+      "family": "Hodge",
+      "case": "4",
+      "operators_agree": true,
+      "operator_sha256": "e922ee68250742b046dd77e8d3c8d0bc16a583a56f3aebaf7a940b28724235e4",
+      "methods": [
+        {
+          "method": "holo",
+          "repetitions": 3,
+          "process_wall_median_s": 1.646793833002448,
+          "process_wall_min_s": 1.629701083060354,
+          "phase_medians": {
+            "imports": 1.2208622498437762,
+            "data_generation": 0.00489850016310811,
+            "detection": 0.04234179202467203,
+            "extraction": 0.02798087475821376,
+            "independent_validation": 0.0007996251806616783,
+            "algorithm_with_validation": 0.0708957090973854,
+            "worker_end_to_end": 1.2965244580991566
+          }
+        },
+        {
+          "method": "hologuess",
+          "repetitions": 3,
+          "process_wall_median_s": 1.6352254580706358,
+          "process_wall_min_s": 1.6316010830923915,
+          "phase_medians": {
+            "imports": 1.1987761249765754,
+            "data_generation": 0.0047639161348342896,
+            "detection": 0.0017012497410178185,
+            "extraction": 0.08069575019180775,
+            "independent_validation": 0.0009601246565580368,
+            "algorithm_with_validation": 0.08340299967676401,
+            "worker_end_to_end": 1.2825782909058034
+          }
+        }
+      ]
+    },
+    {
+      "family": "Hodge",
+      "case": "5",
+      "operators_agree": true,
+      "operator_sha256": "5a0083b71f8f3cba8b60a9eb1502accf5f4a645d4e345b5cfde7769a315bf4a9",
+      "methods": [
+        {
+          "method": "holo",
+          "repetitions": 3,
+          "process_wall_median_s": 1.6160205407068133,
+          "process_wall_min_s": 1.6091942498460412,
+          "phase_medians": {
+            "imports": 1.1865315423347056,
+            "data_generation": 0.006135167088359594,
+            "detection": 0.042217958252877,
+            "extraction": 0.030963166151195765,
+            "independent_validation": 0.0009379582479596138,
+            "algorithm_with_validation": 0.07406349992379546,
+            "worker_end_to_end": 1.2665560422465205
+          }
+        },
+        {
+          "method": "hologuess",
+          "repetitions": 3,
+          "process_wall_median_s": 1.6235349997878075,
+          "process_wall_min_s": 1.6129475408233702,
+          "phase_medians": {
+            "imports": 1.1848912090063095,
+            "data_generation": 0.006051667034626007,
+            "detection": 0.0016135000623762608,
+            "extraction": 0.07782304100692272,
+            "independent_validation": 0.0010540001094341278,
+            "algorithm_with_validation": 0.08045045798644423,
+            "worker_end_to_end": 1.2722765412181616
+          }
+        }
+      ]
+    },
+    {
+      "family": "Jones",
+      "case": "3_1",
+      "operators_agree": true,
+      "operator_sha256": "d757006d1e2e39f43c3d8f5d07da127e159dc489a1c21d34a36a0207577ca300",
+      "methods": [
+        {
+          "method": "hologuess-core",
+          "repetitions": 3,
+          "process_wall_median_s": 2.1601422503590584,
+          "process_wall_min_s": 2.1284456672146916,
+          "phase_medians": {
+            "import_s": 1.1973504582419991,
+            "data_s": 0.010588749777525663,
+            "reconstruction_s": 0.536615707911551,
+            "fit_validation_s": 0.015542624983936548,
+            "reconstruction_and_fit_s": 0.5521583328954875,
+            "holdout_validation_s": 0.022380415815860033,
+            "algorithm_and_validation_s": 0.5743840406648815,
+            "worker_s": 1.791756042279303
+          }
+        },
+        {
+          "method": "hologuess-public",
+          "repetitions": 3,
+          "process_wall_median_s": 2.1421264158561826,
+          "process_wall_min_s": 2.1334409159608185,
+          "phase_medians": {
+            "import_s": 1.167231125291437,
+            "data_s": 0.010503457859158516,
+            "reconstruction_s": 0.5601432919502258,
+            "fit_validation_s": 0.0,
+            "reconstruction_and_fit_s": 0.5601432919502258,
+            "holdout_validation_s": 0.0223024170845747,
+            "algorithm_and_validation_s": 0.5823055421933532,
+            "worker_s": 1.774390292353928
+          }
+        },
+        {
+          "method": "qhsolve",
+          "repetitions": 3,
+          "process_wall_median_s": 2.5842387080192566,
+          "process_wall_min_s": 2.560375041794032,
+          "phase_medians": {
+            "import_s": 1.2271010829135776,
+            "data_s": 0.010557124856859446,
+            "reconstruction_s": 0.9373771245591342,
+            "fit_validation_s": 0.015190333127975464,
+            "reconstruction_and_fit_s": 0.9525674576871097,
+            "holdout_validation_s": 0.02060699975118041,
+            "algorithm_and_validation_s": 0.9735717917792499,
+            "worker_s": 2.2209285837598145
+          }
+        }
+      ]
+    },
+    {
+      "family": "Jones",
+      "case": "4_1",
+      "operators_agree": true,
+      "operator_sha256": "17588f8439a2f515d0a26a535eb6aeef15f274775ef538d39045cdb69c5ae447",
+      "methods": [
+        {
+          "method": "hologuess-core",
+          "repetitions": 3,
+          "process_wall_median_s": 3.9565262920223176,
+          "process_wall_min_s": 3.8675856250338256,
+          "phase_medians": {
+            "import_s": 1.230339250061661,
+            "data_s": 0.04637583391740918,
+            "reconstruction_s": 2.1502157086506486,
+            "fit_validation_s": 0.05218479176983237,
+            "reconstruction_and_fit_s": 2.202033208683133,
+            "holdout_validation_s": 0.0417927079834044,
+            "algorithm_and_validation_s": 2.244292374700308,
+            "worker_s": 3.561433957889676
+          }
+        },
+        {
+          "method": "hologuess-public",
+          "repetitions": 3,
+          "process_wall_median_s": 3.938492249697447,
+          "process_wall_min_s": 3.9021612922661006,
+          "phase_medians": {
+            "import_s": 1.1669124588370323,
+            "data_s": 0.04672245820984244,
+            "reconstruction_s": 2.2931912909261882,
+            "fit_validation_s": 0.0,
+            "reconstruction_and_fit_s": 2.2931912909261882,
+            "holdout_validation_s": 0.04182662535458803,
+            "algorithm_and_validation_s": 2.3350179162807763,
+            "worker_s": 3.552057542372495
+          }
+        },
+        {
+          "method": "qhsolve",
+          "repetitions": 3,
+          "process_wall_median_s": 4.652758417185396,
+          "process_wall_min_s": 4.588688125368208,
+          "phase_medians": {
+            "import_s": 1.2149697090499103,
+            "data_s": 0.046616874635219574,
+            "reconstruction_s": 2.9105307082645595,
+            "fit_validation_s": 0.046004333067685366,
+            "reconstruction_and_fit_s": 2.9578032502904534,
+            "holdout_validation_s": 0.034097583033144474,
+            "algorithm_and_validation_s": 2.994035208132118,
+            "worker_s": 4.261115457862616
+          }
+        }
+      ]
+    },
+    {
+      "family": "Jones",
+      "case": "5_2",
+      "operators_agree": true,
+      "operator_sha256": "d85c6bb337d9254df7c2f56e4fd1242d0bf7621bc4f9ec9d01fcd2943919a506",
+      "methods": [
+        {
+          "method": "hologuess-core",
+          "repetitions": 3,
+          "process_wall_median_s": 2.541290415916592,
+          "process_wall_min_s": 2.5321447090245783,
+          "phase_medians": {
+            "import_s": 1.1753581250086427,
+            "data_s": 0.09980162512511015,
+            "reconstruction_s": 0.559996415860951,
+            "fit_validation_s": 0.19939916674047709,
+            "reconstruction_and_fit_s": 0.759395582601428,
+            "holdout_validation_s": 0.051612208131700754,
+            "algorithm_and_validation_s": 0.8110077907331288,
+            "worker_s": 2.0896956250071526
+          }
+        },
+        {
+          "method": "hologuess-public",
+          "repetitions": 3,
+          "process_wall_median_s": 2.661020915955305,
+          "process_wall_min_s": 2.6157822920940816,
+          "phase_medians": {
+            "import_s": 1.2030150829814374,
+            "data_s": 0.1005440829321742,
+            "reconstruction_s": 0.8544719167985022,
+            "fit_validation_s": 0.0,
+            "reconstruction_and_fit_s": 0.8544719167985022,
+            "holdout_validation_s": 0.0519485417753458,
+            "algorithm_and_validation_s": 0.9063439168967307,
+            "worker_s": 2.218128874897957
+          }
+        },
+        {
+          "method": "qhsolve",
+          "repetitions": 3,
+          "process_wall_median_s": 2.621133124921471,
+          "process_wall_min_s": 2.6080597499385476,
+          "phase_medians": {
+            "import_s": 1.2093567908741534,
+            "data_s": 0.100081667304039,
+            "reconstruction_s": 0.6284382920712233,
+            "fit_validation_s": 0.17980225011706352,
+            "reconstruction_and_fit_s": 0.8082405421882868,
+            "holdout_validation_s": 0.04410454211756587,
+            "algorithm_and_validation_s": 0.8517460832372308,
+            "worker_s": 2.1694690831936896
+          }
+        }
+      ]
+    }
+  ]
+}

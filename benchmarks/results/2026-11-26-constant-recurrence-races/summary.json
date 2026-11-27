@@ -1,0 +1,86 @@
+[
+  {
+    "case": "Fibonacci",
+    "competitor": "ore_algebra",
+    "paired_exact": 3,
+    "medians_ms": {
+      "hologuess": 54.23262482509017,
+      "ore_algebra": 110.16329238191247
+    },
+    "winners": [
+      "hologuess",
+      "hologuess",
+      "hologuess"
+    ]
+  },
+  {
+    "case": "Fibonacci",
+    "competitor": "sympy",
+    "paired_exact": 3,
+    "medians_ms": {
+      "hologuess": 54.84320782124996,
+      "sympy": 0.38499990478157997
+    },
+    "winners": [
+      "sympy",
+      "sympy",
+      "sympy"
+    ]
+  },
+  {
+    "case": "Fibonacci",
+    "competitor": "wolfram",
+    "paired_exact": 3,
+    "medians_ms": {
+      "hologuess": 52.55383299663663,
+      "wolfram": 15.405000000000001
+    },
+    "winners": [
+      "wolfram",
+      "wolfram",
+      "wolfram"
+    ]
+  },
+  {
+    "case": "Cubic recurrence",
+    "competitor": "ore_algebra",
+    "paired_exact": 3,
+    "medians_ms": {
+      "hologuess": 54.63299993425608,
+      "ore_algebra": 111.4065838046372
+    },
+    "winners": [
+      "hologuess",
+      "hologuess",
+      "hologuess"
+    ]
+  },
+  {
+    "case": "Cubic recurrence",
+    "competitor": "sympy",
+    "paired_exact": 3,
+    "medians_ms": {
+      "hologuess": 56.20929226279259,
+      "sympy": 0.9005828760564327
+    },
+    "winners": [
+      "sympy",
+      "sympy",
+      "sympy"
+    ]
+  },
+  {
+    "case": "Cubic recurrence",
+    "competitor": "wolfram",
+    "paired_exact": 3,
+    "medians_ms": {
+      "hologuess": 53.24083426967263,
+      "wolfram": 15.422
+    },
+    "winners": [
+      "wolfram",
+      "wolfram",
+      "wolfram"
+    ]
+  }
+]

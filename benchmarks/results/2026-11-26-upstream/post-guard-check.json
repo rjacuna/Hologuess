@@ -1,0 +1,72 @@
+{
+  "additional_equations": 8,
+  "all_exact_residuals_zero": true,
+  "checks": [
+    {
+      "file": "benchmarks/Sparse_r12d18.csv",
+      "row": 9,
+      "basis_index": 1,
+      "taylor_index": 266,
+      "actual_offset": 11,
+      "exact_residual_zero": true
+    },
+    {
+      "file": "benchmarks/Sparse_r12d18.csv",
+      "row": 9,
+      "basis_index": 2,
+      "taylor_index": 266,
+      "actual_offset": 10,
+      "exact_residual_zero": true
+    },
+    {
+      "file": "benchmarks/Sparse_r12d18.csv",
+      "row": 9,
+      "basis_index": 2,
+      "taylor_index": 267,
+      "actual_offset": 10,
+      "exact_residual_zero": true
+    },
+    {
+      "file": "benchmarks/Sparse_r4d20.csv",
+      "row": 0,
+      "basis_index": 1,
+      "taylor_index": 126,
+      "actual_offset": 3,
+      "exact_residual_zero": true
+    },
+    {
+      "file": "benchmarks/Sparse_r4d20.csv",
+      "row": 4,
+      "basis_index": 1,
+      "taylor_index": 126,
+      "actual_offset": 3,
+      "exact_residual_zero": true
+    },
+    {
+      "file": "benchmarks/Sparse_r4d20.csv",
+      "row": 5,
+      "basis_index": 1,
+      "taylor_index": 126,
+      "actual_offset": 3,
+      "exact_residual_zero": true
+    },
+    {
+      "file": "benchmarks/Sparse_r4d20.csv",
+      "row": 6,
+      "basis_index": 1,
+      "taylor_index": 126,
+      "actual_offset": 3,
+      "exact_residual_zero": true
+    },
+    {
+      "file": "benchmarks/Sparse_r4d20.csv",
+      "row": 9,
+      "basis_index": 1,
+      "taylor_index": 126,
+      "actual_offset": 3,
+      "exact_residual_zero": true
+    }
+  ],
+  "post_guard_checker_sha256": "bd5812fff14f7ce3e67a8a500eda444c668d84de3eef5d54b73a6ecdf35c8aef",
+  "original_cohort_sources_archived": "frozen-sources.zip"
+}

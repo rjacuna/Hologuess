@@ -1,0 +1,267 @@
+{
+  "created_utc": "2026-11-26T02:59:46.322654+00:00",
+  "platform": "macOS-26.4.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "repeats": 3,
+  "native_threads": 1,
+  "workers": 1,
+  "per_run_timeout_s": 180,
+  "cold_definition": "Fresh Sage Python process and empty solver store for each run; OS page caches not flushed.",
+  "comparisons": [
+    {
+      "family": "Hodge",
+      "case": "CI(2,2)",
+      "full_operators_agree": true,
+      "input_sha256": "d1bc13ea34fb425149b4ac51ff24899dad74d0968f96a2f4b0359173b6b5afe0",
+      "operator_sha256": "79cb3b1458df535bed4c016e5a038b75ca11cbdf794b930d1cdb61a700ae7bbf",
+      "methods": [
+        {
+          "method": "holo",
+          "repetitions": 3,
+          "process_wall_median_s": 1.657810416072607,
+          "process_wall_min_s": 1.6491650412790477,
+          "process_wall_max_s": 1.6734311659820378,
+          "phase_medians": {
+            "imports": 1.2224078332073987,
+            "data_generation": 0.007654416840523481,
+            "detection": 0.04395549977198243,
+            "extraction": 0.023820375092327595,
+            "independent_validation": 0.0004176669754087925,
+            "algorithm_with_validation": 0.06819354183971882,
+            "worker_end_to_end": 1.2976016663014889
+          },
+          "peak_rss_bytes_max": 269484032
+        },
+        {
+          "method": "hologuess",
+          "repetitions": 3,
+          "process_wall_median_s": 1.6775190001353621,
+          "process_wall_min_s": 1.655676250346005,
+          "process_wall_max_s": 1.692621999885887,
+          "phase_medians": {
+            "imports": 1.2237708340398967,
+            "data_generation": 0.007501500193029642,
+            "detection": 0.0015048328787088394,
+            "extraction": 0.07643208280205727,
+            "independent_validation": 0.0005282503552734852,
+            "algorithm_with_validation": 0.07851308258250356,
+            "worker_end_to_end": 1.30978541681543
+          },
+          "peak_rss_bytes_max": 264978432
+        }
+      ]
+    },
+    {
+      "family": "Hodge",
+      "case": "CI(2,2,2)",
+      "full_operators_agree": true,
+      "input_sha256": "2969b1a2728c462fe440ed5aeaaccebc351b8f021b16200d26d7af82a2a9e3c8",
+      "operator_sha256": "d81c985abf45ff7b5d4f8b03c213f927512ba037c294da939c286c8c92fa96d5",
+      "methods": [
+        {
+          "method": "holo",
+          "repetitions": 3,
+          "process_wall_median_s": 1.7466942500323057,
+          "process_wall_min_s": 1.7420744579285383,
+          "process_wall_max_s": 1.7575224577449262,
+          "phase_medians": {
+            "imports": 1.2127917502075434,
+            "data_generation": 0.009484000038355589,
+            "detection": 0.0547157502733171,
+            "extraction": 0.1128813331015408,
+            "independent_validation": 0.0009604170918464661,
+            "algorithm_with_validation": 0.1701637920923531,
+            "worker_end_to_end": 1.3901865840889513
+          },
+          "peak_rss_bytes_max": 274300928
+        },
+        {
+          "method": "hologuess",
+          "repetitions": 3,
+          "process_wall_median_s": 1.7446310832165182,
+          "process_wall_min_s": 1.6895564580336213,
+          "process_wall_max_s": 1.7564822919666767,
+          "phase_medians": {
+            "imports": 1.235997167415917,
+            "data_generation": 0.009645415935665369,
+            "detection": 0.0033707497641444206,
+            "extraction": 0.1347585842013359,
+            "independent_validation": 0.0010551661252975464,
+            "algorithm_with_validation": 0.13918450009077787,
+            "worker_end_to_end": 1.3868632083758712
+          },
+          "peak_rss_bytes_max": 266715136
+        }
+      ]
+    },
+    {
+      "family": "Hodge",
+      "case": "CI(2,2,2,2)",
+      "full_operators_agree": true,
+      "input_sha256": "a239252f9e896bab7b14861bf830a50c2a8499ea5af3e27cb673221776a2c55f",
+      "operator_sha256": "220f23f93a6d97a19b0dea98f819886c31cba140ab021b2e3a74a67094a9e89e",
+      "methods": [
+        {
+          "method": "holo",
+          "repetitions": 3,
+          "process_wall_median_s": 2.6365485000424087,
+          "process_wall_min_s": 2.630416624713689,
+          "process_wall_max_s": 2.7308129998855293,
+          "phase_medians": {
+            "imports": 1.2113733342848718,
+            "data_generation": 0.030622665770351887,
+            "detection": 0.055097749922424555,
+            "extraction": 0.9786645825952291,
+            "independent_validation": 0.0017642080783843994,
+            "algorithm_with_validation": 1.0354751250706613,
+            "worker_end_to_end": 2.277471125125885
+          },
+          "peak_rss_bytes_max": 318095360
+        },
+        {
+          "method": "hologuess",
+          "repetitions": 3,
+          "process_wall_median_s": 1.7920279582031071,
+          "process_wall_min_s": 1.7720376658253372,
+          "process_wall_max_s": 1.8144137500785291,
+          "phase_medians": {
+            "imports": 1.2170762498863041,
+            "data_generation": 0.03029220923781395,
+            "detection": 0.006818582769483328,
+            "extraction": 0.17801395896822214,
+            "independent_validation": 0.0018637082539498806,
+            "algorithm_with_validation": 0.18643758306279778,
+            "worker_end_to_end": 1.4322072081267834
+          },
+          "peak_rss_bytes_max": 268566528
+        }
+      ]
+    },
+    {
+      "family": "Jones",
+      "case": "5_2",
+      "full_operators_agree": true,
+      "input_sha256": "e23bf527adf79f332863c399b41b96b77c8458a82c61f5eb257ea986ae7d93f9",
+      "operator_sha256": "d85c6bb337d9254df7c2f56e4fd1242d0bf7621bc4f9ec9d01fcd2943919a506",
+      "methods": [
+        {
+          "method": "hologuess-core",
+          "repetitions": 3,
+          "process_wall_median_s": 2.695120833348483,
+          "process_wall_min_s": 2.607839874923229,
+          "process_wall_max_s": 3.0223065833561122,
+          "phase_medians": {
+            "import_s": 1.233053291682154,
+            "data_s": 0.10091687506064773,
+            "reconstruction_s": 0.5891674160957336,
+            "fit_validation_s": 0.20027608377858996,
+            "reconstruction_and_fit_s": 0.7894434998743236,
+            "holdout_validation_s": 0.0520716249011457,
+            "algorithm_and_validation_s": 0.8409718330949545,
+            "worker_s": 2.183922416996211
+          },
+          "peak_rss_bytes_max": 951435264
+        },
+        {
+          "method": "hologuess-public",
+          "repetitions": 3,
+          "process_wall_median_s": 2.7343824170529842,
+          "process_wall_min_s": 2.667928040958941,
+          "process_wall_max_s": 2.7377633340656757,
+          "phase_medians": {
+            "import_s": 1.1948108337819576,
+            "data_s": 0.09887570794671774,
+            "reconstruction_s": 0.846625667065382,
+            "fit_validation_s": 0.0,
+            "reconstruction_and_fit_s": 0.846625667065382,
+            "holdout_validation_s": 0.05161091685295105,
+            "algorithm_and_validation_s": 0.8977193343453109,
+            "worker_s": 2.197281832806766
+          },
+          "peak_rss_bytes_max": 976322560
+        },
+        {
+          "method": "qhsolve",
+          "repetitions": 3,
+          "process_wall_median_s": 2.6981950839981437,
+          "process_wall_min_s": 2.6656264578923583,
+          "process_wall_max_s": 2.7297570831142366,
+          "phase_medians": {
+            "import_s": 1.2227504174225032,
+            "data_s": 0.09975058259442449,
+            "reconstruction_s": 0.6130876671522856,
+            "fit_validation_s": 0.18210712494328618,
+            "reconstruction_and_fit_s": 0.792544917203486,
+            "holdout_validation_s": 0.04456008318811655,
+            "algorithm_and_validation_s": 0.835801042150706,
+            "worker_s": 2.1716756662353873
+          },
+          "peak_rss_bytes_max": 951451648
+        }
+      ]
+    },
+    {
+      "family": "Jones",
+      "case": "6_1",
+      "full_operators_agree": true,
+      "input_sha256": "d8249ee587b7cdd180aedba76e2c0465816aa1f2c816cd7c223b49a4b5fe1350",
+      "operator_sha256": "f778922b873d56c4f4185db8ded125cdb63e80802b40d800375f6243d806fe22",
+      "methods": [
+        {
+          "method": "hologuess-core",
+          "repetitions": 3,
+          "process_wall_median_s": 9.563778833951801,
+          "process_wall_min_s": 9.459163124673069,
+          "process_wall_max_s": 9.912041207775474,
+          "phase_medians": {
+            "import_s": 1.2276513329707086,
+            "data_s": 0.4538057497702539,
+            "reconstruction_s": 5.005492624826729,
+            "fit_validation_s": 0.9247590419836342,
+            "reconstruction_and_fit_s": 5.925734041724354,
+            "holdout_validation_s": 0.8096509580500424,
+            "algorithm_and_validation_s": 6.734979500062764,
+            "worker_s": 8.435249417088926
+          },
+          "peak_rss_bytes_max": 3769090048
+        },
+        {
+          "method": "hologuess-public",
+          "repetitions": 3,
+          "process_wall_median_s": 9.878599040675908,
+          "process_wall_min_s": 9.804942583665252,
+          "process_wall_max_s": 10.060449999757111,
+          "phase_medians": {
+            "import_s": 1.252418916206807,
+            "data_s": 0.47245641704648733,
+            "reconstruction_s": 6.20410754205659,
+            "fit_validation_s": 0.0,
+            "reconstruction_and_fit_s": 6.20410754205659,
+            "holdout_validation_s": 0.8184413746930659,
+            "algorithm_and_validation_s": 7.022694374900311,
+            "worker_s": 8.732784290798008
+          },
+          "peak_rss_bytes_max": 3605233664
+        },
+        {
+          "method": "qhsolve",
+          "repetitions": 3,
+          "process_wall_median_s": 9.602177624590695,
+          "process_wall_min_s": 9.52861374989152,
+          "process_wall_max_s": 9.660576915834099,
+          "phase_medians": {
+            "import_s": 1.2534920419566333,
+            "data_s": 0.455054874997586,
+            "reconstruction_s": 5.076544625218958,
+            "fit_validation_s": 0.8608717080205679,
+            "reconstruction_and_fit_s": 5.937416333239526,
+            "holdout_validation_s": 0.7552157090976834,
+            "algorithm_and_validation_s": 6.68744649970904,
+            "worker_s": 8.47390770772472
+          },
+          "peak_rss_bytes_max": 3682304000
+        }
+      ]
+    }
+  ]
+}

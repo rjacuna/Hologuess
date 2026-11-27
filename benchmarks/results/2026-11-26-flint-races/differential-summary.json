@@ -1,0 +1,95 @@
+{
+  "class_name": "Differential operators over rational Taylor data",
+  "class_grace_seconds": 0.5,
+  "class_grace_fixed_before_all_pairs": true,
+  "repeats": 3,
+  "timing_scope": "Fresh processes, one worker each, shared start after input preparation. Time includes public guessing and canonical bounded-space conversion. The controller compares the complete coefficient space with the independent fitting and held-out certificate after the solver clock.",
+  "platform": "macOS-26.4.1-arm64-arm-64bit-Mach-O",
+  "case": {
+    "path": "benchmarks/OrderUpTo30/Dense_r25d4.csv",
+    "effective_order": 25,
+    "effective_degree": 4,
+    "reference_space_sha256": "2685bab20651c5a5c336777cee9362afbfbdd76173d17252673226950f97a07c"
+  },
+  "previous_first_loss": {
+    "file": "benchmarks/OrderUpTo30/Dense_r25d4.csv",
+    "order": 25,
+    "degree": 4,
+    "cells": 130,
+    "N_ms": 500.0,
+    "repetitions": 3,
+    "construction_median_s": {
+      "hologuess": 0.1249970830976963,
+      "ore_algebra": 0.12352695828303695
+    },
+    "construction_range_s": {
+      "hologuess": [
+        0.11897633271291852,
+        0.12804045900702477
+      ],
+      "ore_algebra": [
+        0.11484766565263271,
+        0.12538995826616883
+      ]
+    },
+    "previous_0_1_3_construction_median_s": {
+      "hologuess": 0.2840141667984426,
+      "ore_algebra": 0.11552683403715491
+    },
+    "hologuess_speedup": 2.272166355885764,
+    "hologuess_over_ore": 1.0119012467812156,
+    "median_winner": "ore_algebra",
+    "exact_full_space_agreement": true,
+    "public_api_median_s": {
+      "hologuess": 0.12187450006604195,
+      "ore_algebra": 0.11800158303231001
+    },
+    "output_adapter_median_s": {
+      "hologuess": 0.0032671671360731125,
+      "ore_algebra": 0.005745624657720327
+    },
+    "controller_launch_to_ready_median_s": {
+      "hologuess": 1.6364421672187746,
+      "ore_algebra": 1.5921533750370145
+    }
+  },
+  "comparison": {
+    "repetitions": 3,
+    "methods": {
+      "hologuess": {
+        "samples_seconds": [
+          0.1196617498062551,
+          0.1050782916136086,
+          0.10507395910099149
+        ],
+        "censored": 0,
+        "errors": 0,
+        "verified_arrival_seconds": [
+          0.122154833,
+          0.107238958,
+          0.1069255
+        ],
+        "median_seconds": 0.1050782916136086
+      },
+      "ore_algebra": {
+        "samples_seconds": [
+          0.1273977910168469,
+          0.11418233392760158,
+          0.11217241687700152
+        ],
+        "censored": 0,
+        "errors": 0,
+        "verified_arrival_seconds": [
+          0.128770625,
+          0.116266208,
+          0.114700459
+        ],
+        "median_seconds": 0.11418233392760158
+      }
+    },
+    "both_verified_all_pairs": true,
+    "ore_over_hologuess": 1.086640562709852
+  },
+  "errors": [],
+  "completed_pairs": 3
+}

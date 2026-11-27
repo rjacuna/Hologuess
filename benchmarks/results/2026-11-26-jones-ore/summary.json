@@ -1,0 +1,147 @@
+{
+  "class_name": "Jones q-holonomic operators",
+  "class_grace_seconds": 60.0,
+  "class_grace_fixed_before_all_pairs": true,
+  "repeats": 3,
+  "setup_watchdog_seconds": 60,
+  "computation_watchdog_seconds": 180,
+  "timing_scope": "Fresh processes, one worker each, shared start after input preparation. Time includes public guessing, normalization and exact fitting and suffix checks. Controller coefficient comparison follows the solver clock.",
+  "platform": "macOS-26.4.1-arm64-arm-64bit-Mach-O",
+  "reference_sha256": "85ff4c1effe82e52a758a55a5caa07985929aa073aadf6682f897a6afdb569ae",
+  "comparisons": [
+    {
+      "knot": "3_1",
+      "repetitions": 3,
+      "methods": {
+        "hologuess": {
+          "samples_seconds": [
+            0.6459510838612914,
+            0.6480972920544446,
+            0.6619133749045432
+          ],
+          "censored": 0,
+          "errors": 0,
+          "verified_arrival_seconds": [
+            0.6477765,
+            0.650372,
+            0.664408458
+          ],
+          "median_seconds": 0.6480972920544446
+        },
+        "ore_algebra": {
+          "samples_seconds": [
+            0.683040542062372,
+            0.645879624877125,
+            0.6501874169334769
+          ],
+          "censored": 0,
+          "errors": 0,
+          "verified_arrival_seconds": [
+            0.685117458,
+            0.647704125,
+            0.65157
+          ],
+          "median_seconds": 0.6501874169334769
+        }
+      },
+      "both_verified_all_pairs": true,
+      "ore_over_hologuess": 1.0032250171458157
+    },
+    {
+      "knot": "4_1",
+      "repetitions": 3,
+      "methods": {
+        "hologuess": {
+          "samples_seconds": [
+            2.4364572083577514,
+            2.432150417007506,
+            2.371451500337571
+          ],
+          "censored": 0,
+          "errors": 0,
+          "verified_arrival_seconds": [
+            2.438905958,
+            2.433470916,
+            2.373940625
+          ],
+          "median_seconds": 2.432150417007506
+        },
+        "ore_algebra": {
+          "samples_seconds": [
+            9.941839708015323,
+            9.983050332870334,
+            9.986752707976848
+          ],
+          "censored": 0,
+          "errors": 0,
+          "verified_arrival_seconds": [
+            9.944573542,
+            9.985080083,
+            9.988524125
+          ],
+          "median_seconds": 9.983050332870334
+        }
+      },
+      "both_verified_all_pairs": true,
+      "ore_over_hologuess": 4.104618802793201
+    },
+    {
+      "knot": "5_2",
+      "repetitions": 1,
+      "methods": {
+        "hologuess": {
+          "samples_seconds": [
+            0.9686252088285983
+          ],
+          "censored": 0,
+          "errors": 0,
+          "verified_arrival_seconds": [
+            0.969895334
+          ],
+          "median_seconds": 0.9686252088285983
+        },
+        "ore_algebra": {
+          "samples_seconds": [
+            null
+          ],
+          "censored": 1,
+          "errors": 0,
+          "verified_arrival_seconds": [],
+          "median_seconds": null
+        }
+      },
+      "both_verified_all_pairs": false,
+      "ore_over_hologuess": null
+    },
+    {
+      "knot": "6_1",
+      "repetitions": 1,
+      "methods": {
+        "hologuess": {
+          "samples_seconds": [
+            7.531041249632835
+          ],
+          "censored": 0,
+          "errors": 0,
+          "verified_arrival_seconds": [
+            7.536610083
+          ],
+          "median_seconds": 7.531041249632835
+        },
+        "ore_algebra": {
+          "samples_seconds": [
+            null
+          ],
+          "censored": 1,
+          "errors": 0,
+          "verified_arrival_seconds": [],
+          "median_seconds": null
+        }
+      },
+      "both_verified_all_pairs": false,
+      "ore_over_hologuess": null
+    }
+  ],
+  "errors": [],
+  "completed_pairs": 8
+}

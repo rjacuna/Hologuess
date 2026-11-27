@@ -1,0 +1,24 @@
+{
+  "repository": "JonesRec",
+  "head": "9b9189f66816e8f59cb887fe393e98485d2e0366",
+  "files": {
+    "aj/qhsolve.py": {
+      "sha256": "3d8d687c3895afec857fc5241e8900e61370789a53d3ff8059030be69a9e6933",
+      "copied_to": "hologuess/_qhsolve.py",
+      "current_sha256": "66fddf2309c9240a778092169dbbe9cd01a5051c37c442d7ed5a0528e3f92473"
+    },
+    "aj/fastinterp.py": {
+      "sha256": "26091c9e9a6b8e8101dcdc2c496beb4b19dd906ecefe7f0c50ad8cdf8491c4f5",
+      "copied_to": "hologuess/_fastinterp.py",
+      "current_sha256": "9dcb161fb9790914fbac44dd8fea2842a341bb2c69156f179bb75b411c051b0f"
+    },
+    "aj/pmbasis.py": {
+      "sha256": "f1f83a88849a8d91bea2fc79487aaa0027543152deddf62283f6ae0b923ffb3d",
+      "copied_to": "hologuess/_pmbasis.py",
+      "current_sha256": "f1f83a88849a8d91bea2fc79487aaa0027543152deddf62283f6ae0b923ffb3d"
+    }
+  },
+  "ore_algebra_source_commit": "2904d75321ef50f5b02b5e8bc355c7d9d74a484f",
+  "changes": "Grouped ZZ/QQ validation and tensor support retained; identical one-worker tasks inline, operation-scoped lazy/restoring native limits, verified original prime constants, batched parameter evaluation, package-relative imports.",
+  "version": "0.1.2"
+}

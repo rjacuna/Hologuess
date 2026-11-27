@@ -1,0 +1,50 @@
+[
+  {
+    "family": "Jones",
+    "case": "3_1",
+    "before_public_s": 3.5935553340241313,
+    "after_public_s": 2.1421264158561826,
+    "qhsolve_s": 2.5842387080192566,
+    "before_after_speedup": 1.6775645486766615
+  },
+  {
+    "family": "Jones",
+    "case": "4_1",
+    "before_public_s": 6.065467833075672,
+    "after_public_s": 3.938492249697447,
+    "qhsolve_s": 4.652758417185396,
+    "before_after_speedup": 1.5400481830430461
+  },
+  {
+    "family": "Jones",
+    "case": "5_2",
+    "before_public_s": 2.8577503343112767,
+    "after_public_s": 2.661020915955305,
+    "qhsolve_s": 2.621133124921471,
+    "before_after_speedup": 1.0739300533777825
+  },
+  {
+    "family": "Hodge",
+    "case": "3",
+    "before_cold_s": 1.8404294159263372,
+    "after_cold_s": 1.6325719580054283,
+    "holo_s": 1.6098396247252822,
+    "before_after_speedup": 1.127319017640641
+  },
+  {
+    "family": "Hodge",
+    "case": "4",
+    "before_cold_s": 1.8535949168726802,
+    "after_cold_s": 1.6352254580706358,
+    "holo_s": 1.646793833002448,
+    "before_after_speedup": 1.133540887419704
+  },
+  {
+    "family": "Hodge",
+    "case": "5",
+    "before_cold_s": 1.851765665691346,
+    "after_cold_s": 1.6235349997878075,
+    "holo_s": 1.6160205407068133,
+    "before_after_speedup": 1.1405763755837526
+  }
+]

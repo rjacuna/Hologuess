@@ -1,0 +1,309 @@
+{
+  "schema": "public-upstream-guessing-coverage-v1",
+  "suite": "tests/test_upstream_ore.py",
+  "execution": "sage -python -m unittest discover -s tests -p test_upstream_ore.py -v",
+  "per_case_timeout_seconds": 180,
+  "scope": "Mathematical compatibility of exact publicHologuess guess API; upstream internalalgorithm/formattingkeywords and analytic/rational-recognition presentation APIs are explicitly translated or classified, never silently counted as native APIparity.",
+  "sources": [
+    {
+      "id": "ore_algebra_guessing",
+      "upstream": "mkauers/ore_algebra",
+      "commit": "a9bce94221c11ae142a0e95e26baa8987783d246",
+      "path": "src/ore_algebra/guessing.py",
+      "url": "https://github.com/mkauers/ore_algebra/blob/a9bce94221c11ae142a0e95e26baa8987783d246/src/ore_algebra/guessing.py",
+      "sha256": "c9e02b136bb6b4cd809382f8febfae37f4edec151408b03a82f10182a2429c07",
+      "license": "GPL-2.0-or-later",
+      "cases": [
+        {
+          "id": "ore-7",
+          "source_line": 7,
+          "source_expression": "guess([SR(1/(i+1)) for i in range(10)], OreAlgebra(QQ['n'], 'Sn'))",
+          "status": "covered",
+          "test": "UpstreamOreExamples.test_ore_symbolic_rational_coercion",
+          "verification": "Same exact symbolic rational inputs and ten values; pinned first-order operator and two heldout windows."
+        },
+        {
+          "id": "ore-151",
+          "source_line": 151,
+          "source_expression": "rec = guess([(2*i+1)^15 * (1 + 2^i + 3^i)^2 for i in range(1000)], OreAlgebra(ZZ['n'], 'Sn')) # long time (2.9 s)",
+          "status": "covered",
+          "test": "UpstreamOreExamples.test_ore_large_integer_order_six_degree_ninety",
+          "verification": "All 1,000 source values, literal order 6/degree 90 box,20 heldouts. Independent conjugation of the six-exponential constant recurrence gives full expected polynomial operator."
+        },
+        {
+          "id": "ore-155",
+          "source_line": 155,
+          "source_expression": "rec = guess([1/(i+t) + t^i for i in range(100)], OreAlgebra(R['n'], 'Sn'))",
+          "status": "covered",
+          "test": "UpstreamOreExamples.test_ore_rational_parameter_with_polynomial_parent",
+          "verification": "Same QQ[t][n] parent and100 rational-parameter observations; known polynomial coefficient vector, parameter degree 4,8 held-out windows."
+        },
+        {
+          "id": "ore-161",
+          "source_line": 161,
+          "source_expression": "guess(cat, R)",
+          "status": "covered",
+          "test": "UpstreamOreExamples.test_ore_catalan_algebraic",
+          "verification": "Same ten Catalan coefficients; pinned algebraic polynomial,2 heldouts."
+        },
+        {
+          "id": "ore-347",
+          "source_line": 347,
+          "source_expression": "guess_raw(data, A, order=5, degree=3, lift=K)",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamOreExamples.test_ore_raw_finite_field_full_kernel",
+          "verification": "Same GF(1091) field,200 values and order 5/degree 3 box; compare the completetwo-dimensional bounded kernel with an independently assembled shift coefficient matrix,8 held-outs. Public API replaces internal guess_raw."
+        },
+        {
+          "id": "ore-505",
+          "source_line": 505,
+          "source_expression": "guess_hp(data, OreAlgebra(R, 'Dx'), order=4, degree=4, lift=K)",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamOreExamples.test_ore_hermite_pade_differential",
+          "verification": "Same GF(1091) field,2,000 values and order4/degree 4 box; pinned differential operator and20 heldouts. Hologuess modular/exact route replaces internal HP backend."
+        },
+        {
+          "id": "ore-507",
+          "source_line": 507,
+          "source_expression": "len(guess_hp(data, OreAlgebra(R, 'C'), order=16, degree=64, lift=K))",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamOreExamples.test_ore_hermite_pade_algebraic_full_bounded_space",
+          "verification": "Same GF(1091) field,2,000 values and order 16/degree 64 box; independent four-square-root elimination gives primitive algebraic equation, compare complete bounded polynomial-multiple space,20 heldouts. Upstreamlength one counts a polynomial-module basis, not Hologuess constant-field basis dimension."
+        },
+        {
+          "id": "ore-1341",
+          "source_line": 1341,
+          "source_expression": "guess_mult(data, OreAlgebra(ZZ['n','k'], 'Sn', 'Sk'), order=1, degree=0)",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamOreExamples.test_ore_multivariate_binomial_shifts",
+          "verification": "Same10\u00d710 binomial tensor, order(1,1),degree0; complete bounded space equals independent full grid coefficient-matrix kernel;5 held-out grid observations."
+        },
+        {
+          "id": "ore-1343",
+          "source_line": 1343,
+          "source_expression": "guess_mult(data, OreAlgebra(ZZ['x','y'], 'Dx', 'Dy'), order=1, degree=1)",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamOreExamples.test_ore_multivariate_binomial_derivatives",
+          "verification": "Same10\u00d710 binomial tensor, order(1,1),degree1; complete bounded space equals independent Taylor coefficient-matrix kernel;5 held-out grid observations."
+        },
+        {
+          "id": "ore-1345",
+          "source_line": 1345,
+          "source_expression": "guess_mult(data, OreAlgebra(ZZ['n','y'], 'Sn', 'Dy'), order=1, degree=1)",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamOreExamples.test_ore_multivariate_binomial_shift_derivative",
+          "verification": "Same10\u00d710 binomial tensor, order(1,1),degree1; complete bounded space equals independent mixed-action coefficient matrix;5 held-out grid observations."
+        },
+        {
+          "id": "ore-1347",
+          "source_line": 1347,
+          "source_expression": "guess_mult(data, OreAlgebra(ZZ['x','k'], 'Dx', 'Sk'), order=1, degree=1)",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamOreExamples.test_ore_multivariate_binomial_derivative_shift",
+          "verification": "Same10\u00d710 binomial tensor, order(1,1),degree1; complete bounded space equals independent mixed-action coefficient matrix;5 held-out grid observations."
+        }
+      ]
+    },
+    {
+      "id": "ore_algebra_extra",
+      "upstream": "mkauers/ore_algebra",
+      "commit": "a9bce94221c11ae142a0e95e26baa8987783d246",
+      "path": "src/ore_algebra/recurrence_operator_1_1.py",
+      "url": "https://github.com/mkauers/ore_algebra/blob/a9bce94221c11ae142a0e95e26baa8987783d246/src/ore_algebra/recurrence_operator_1_1.py#L808",
+      "license": "GPL-2.0-or-later",
+      "cases": [
+        {
+          "id": "ore-extra-808",
+          "source_line": 808,
+          "source_expression": "guess([(-3)^k*(k+1)/(2*k+4) - 2^k*k^3/(k+3) for k in range(500)], A)",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamOreExamples.test_ore_extra_exponential_rational_recurrence",
+          "verification": "All 500 exact source values, public guess order 2/degree 8full box; entire boundedspace compared with independent coefficient matrix and20 heldouts. Asymptotic-series presentation beyond the originalguesscall is outside scope."
+        }
+      ]
+    },
+    {
+      "id": "sympy_guess",
+      "upstream": "sympy/sympy",
+      "version": "1.14.0",
+      "commit": "16fa855354eb7bcabd3fe10993841e03b1382692",
+      "path": "sympy/concrete/tests/test_guess.py",
+      "url": "https://github.com/sympy/sympy/blob/16fa855354eb7bcabd3fe10993841e03b1382692/sympy/concrete/tests/test_guess.py",
+      "sha256": "4cf5ba1f2d753e8e952d91bf771f79c77b0c05897991c407f308c9e933adbbe9",
+      "license": "BSD-3-Clause",
+      "cases": [
+        {
+          "id": "sympy-21",
+          "source_function": "test_find_simple_recurrence_vector",
+          "source_line": 21,
+          "source_expression": "find_simple_recurrence_vector(\n            [fibonacci(k) for k in range(12)])",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamSymPyExamples.test_sympy_simple_recurrence_vector",
+          "verification": "Exact Hologuess Ore relation or full finite bounded kernel, with heldout observations and a pinned operator/formula or independent coefficient matrix. Source API expression/variable/evaluation presentation is not an Hologuess return type."
+        },
+        {
+          "id": "sympy-28",
+          "source_function": "test_find_simple_recurrence",
+          "source_line": 28,
+          "source_expression": "find_simple_recurrence([fibonacci(k) for k in range(12)])",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamSymPyExamples.test_sympy_simple_recurrence_vector",
+          "verification": "Exact Hologuess Ore relation or full finite bounded kernel, with heldout observations and a pinned operator/formula or independent coefficient matrix. Source API expression/variable/evaluation presentation is not an Hologuess return type."
+        },
+        {
+          "id": "sympy-35",
+          "source_function": "test_find_simple_recurrence",
+          "source_line": 35,
+          "source_expression": "find_simple_recurrence(a, A=f, N=i)",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamSymPyExamples.test_sympy_named_simple_recurrence",
+          "verification": "Exact Hologuess Ore relation or full finite bounded kernel, with heldout observations and a pinned operator/formula or independent coefficient matrix. Source API expression/variable/evaluation presentation is not an Hologuess return type."
+        },
+        {
+          "id": "sympy-37",
+          "source_function": "test_find_simple_recurrence",
+          "source_line": 37,
+          "source_expression": "find_simple_recurrence([0, 2, 15, 74, 12, 3, 0,\n                                    1, 2, 85, 4, 5, 63])",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamSymPyExamples.test_sympy_no_simple_recurrence",
+          "verification": "Empty result within an explicit data-supported constant-coefficient ansatz, not an unrestricted absence claim."
+        },
+        {
+          "id": "sympy-43",
+          "source_function": "test_rationalize",
+          "source_line": 43,
+          "source_expression": "rationalize(cos(pi/3))",
+          "status": "outside_exact_input_scope",
+          "test": "UpstreamSymPyExamples.test_sympy_rationalize_is_outside_exact_input",
+          "verification": "Approximate rational recognition is outside exact guessing scope; Hologuess public API is tested to reject approximate inputs before coercion."
+        },
+        {
+          "id": "sympy-44",
+          "source_function": "test_rationalize",
+          "source_line": 44,
+          "source_expression": "rationalize(mpf(\"0.333333333333333\"))",
+          "status": "outside_exact_input_scope",
+          "test": "UpstreamSymPyExamples.test_sympy_rationalize_is_outside_exact_input",
+          "verification": "Approximate rational recognition is outside exact guessing scope; Hologuess public API is tested to reject approximate inputs before coercion."
+        },
+        {
+          "id": "sympy-45",
+          "source_function": "test_rationalize",
+          "source_line": 45,
+          "source_expression": "rationalize(mpf(\"-0.333333333333333\"))",
+          "status": "outside_exact_input_scope",
+          "test": "UpstreamSymPyExamples.test_sympy_rationalize_is_outside_exact_input",
+          "verification": "Approximate rational recognition is outside exact guessing scope; Hologuess public API is tested to reject approximate inputs before coercion."
+        },
+        {
+          "id": "sympy-46",
+          "source_function": "test_rationalize",
+          "source_line": 46,
+          "source_expression": "rationalize(pi, maxcoeff = 250)",
+          "status": "outside_exact_input_scope",
+          "test": "UpstreamSymPyExamples.test_sympy_rationalize_is_outside_exact_input",
+          "verification": "Approximate rational recognition is outside exact guessing scope; Hologuess public API is tested to reject approximate inputs before coercion."
+        },
+        {
+          "id": "sympy-51",
+          "source_function": "test_guess_generating_function_rational",
+          "source_line": 51,
+          "source_expression": "guess_generating_function_rational([fibonacci(k)\n        for k in range(5, 15)])",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamSymPyExamples.test_sympy_shifted_fibonacci_rational_generating_function",
+          "verification": "Exact Hologuess Ore relation or full finite bounded kernel, with heldout observations and a pinned operator/formula or independent coefficient matrix. Source API expression/variable/evaluation presentation is not an Hologuess return type."
+        },
+        {
+          "id": "sympy-57",
+          "source_function": "test_guess_generating_function",
+          "source_line": 57,
+          "source_expression": "guess_generating_function([fibonacci(k)\n        for k in range(5, 15)])",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamSymPyExamples.test_sympy_shifted_fibonacci_rational_generating_function",
+          "verification": "Exact Hologuess Ore relation or full finite bounded kernel, with heldout observations and a pinned operator/formula or independent coefficient matrix. Source API expression/variable/evaluation presentation is not an Hologuess return type."
+        },
+        {
+          "id": "sympy-59",
+          "source_function": "test_guess_generating_function",
+          "source_line": 59,
+          "source_expression": "guess_generating_function(\n        [1, 2, 5, 14, 41, 124, 383, 1200, 3799, 12122, 38919])",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamSymPyExamples.test_sympy_algebraic_generating_function",
+          "verification": "Pinned square-root formula independently extends source eleven values to 28 before fitting unrestricted algebraic box order2/degree 4; verify originalprefix, full expected polynomial andfour heldouts. Specialized upstream square-root restriction has fewer unknowns."
+        },
+        {
+          "id": "sympy-62",
+          "source_function": "test_guess_generating_function",
+          "source_line": 62,
+          "source_expression": "guess_generating_function(sympify(\n       \"[3/2, 11/2, 0, -121/2, -363/2, 121, 4719/2, 11495/2, -8712, -178717/2]\")\n       )",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamSymPyExamples.test_sympy_rational_generating_function_with_zero",
+          "verification": "Exact Hologuess Ore relation or full finite bounded kernel, with heldout observations and a pinned operator/formula or independent coefficient matrix. Source API expression/variable/evaluation presentation is not an Hologuess return type."
+        },
+        {
+          "id": "sympy-65",
+          "source_function": "test_guess_generating_function",
+          "source_line": 65,
+          "source_expression": "guess_generating_function([factorial(k) for k in range(12)],\n       types=['egf'])",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamSymPyExamples.test_sympy_factorial_exponential_generating_function",
+          "verification": "Translate EGF input to exact Taylor coefficients by dividing source sequence values by n!, then compare pinned algebraic/differential equation withthree heldouts."
+        },
+        {
+          "id": "sympy-67",
+          "source_function": "test_guess_generating_function",
+          "source_line": 67,
+          "source_expression": "guess_generating_function([k+1 for k in range(12)],\n       types=['egf'])",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamSymPyExamples.test_sympy_linear_exponential_generating_function",
+          "verification": "Translate EGF input to exact Taylor coefficients by dividing source sequence values by n!, then compare pinned algebraic/differential equation withthree heldouts."
+        },
+        {
+          "id": "sympy-73",
+          "source_function": "test_guess",
+          "source_line": 73,
+          "source_expression": "guess([1, 2, 6, 24, 120], evaluate=False)",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamSymPyExamples.test_sympy_factorial_product_presentations",
+          "verification": "Exact Hologuess Ore relation or full finite bounded kernel, with heldout observations and a pinned operator/formula or independent coefficient matrix. Source API expression/variable/evaluation presentation is not an Hologuess return type."
+        },
+        {
+          "id": "sympy-74",
+          "source_function": "test_guess",
+          "source_line": 74,
+          "source_expression": "guess([1, 2, 6, 24, 120])",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamSymPyExamples.test_sympy_factorial_product_presentations",
+          "verification": "Exact Hologuess Ore relation or full finite bounded kernel, with heldout observations and a pinned operator/formula or independent coefficient matrix. Source API expression/variable/evaluation presentation is not an Hologuess return type."
+        },
+        {
+          "id": "sympy-75",
+          "source_function": "test_guess",
+          "source_line": 75,
+          "source_expression": "guess([1, 2, 7, 42, 429, 7436, 218348, 10850216], niter=4)",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamSymPyExamples.test_sympy_iterated_product_ratio",
+          "verification": "Original ASM nested-hypergeometric product is outside finite linear P-recursive original-sequence scope. Exercise same mathematical iterated-guess ratio step via public Hologuess: exact second ratio sequence, independent factorial product extension matching all eight source values, rational shift recurrence andthree heldouts."
+        },
+        {
+          "id": "sympy-80",
+          "source_function": "test_guess",
+          "source_line": 80,
+          "source_expression": "guess([1, 0, 2])",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamSymPyExamples.test_sympy_short_no_closed_form",
+          "verification": "Empty result within an explicit data-supported constant-coefficient ansatz, not an unrestricted absence claim."
+        },
+        {
+          "id": "sympy-82",
+          "source_function": "test_guess",
+          "source_line": 82,
+          "source_expression": "guess([1, 2, 6, 24, 120], variables=[x, y])",
+          "status": "covered_with_semantic_translation",
+          "test": "UpstreamSymPyExamples.test_sympy_factorial_product_presentations",
+          "verification": "Exact Hologuess Ore relation or full finite bounded kernel, with heldout observations and a pinned operator/formula or independent coefficient matrix. Source API expression/variable/evaluation presentation is not an Hologuess return type."
+        }
+      ]
+    }
+  ]
+}

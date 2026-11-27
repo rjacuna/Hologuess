@@ -1,0 +1,112 @@
+[
+  {
+    "power": 8,
+    "x_degree": 7,
+    "coefficient": "1"
+  },
+  {
+    "power": 7,
+    "x_degree": 6,
+    "coefficient": "4"
+  },
+  {
+    "power": 6,
+    "x_degree": 5,
+    "coefficient": "7"
+  },
+  {
+    "power": 5,
+    "x_degree": 4,
+    "coefficient": "7"
+  },
+  {
+    "power": 4,
+    "x_degree": 5,
+    "coefficient": "-32/3"
+  },
+  {
+    "power": 4,
+    "x_degree": 4,
+    "coefficient": "-28/3"
+  },
+  {
+    "power": 4,
+    "x_degree": 3,
+    "coefficient": "13/3"
+  },
+  {
+    "power": 3,
+    "x_degree": 4,
+    "coefficient": "-64/3"
+  },
+  {
+    "power": 3,
+    "x_degree": 3,
+    "coefficient": "-56/3"
+  },
+  {
+    "power": 3,
+    "x_degree": 2,
+    "coefficient": "5/3"
+  },
+  {
+    "power": 2,
+    "x_degree": 4,
+    "coefficient": "-512/27"
+  },
+  {
+    "power": 2,
+    "x_degree": 3,
+    "coefficient": "208/9"
+  },
+  {
+    "power": 2,
+    "x_degree": 2,
+    "coefficient": "-104/9"
+  },
+  {
+    "power": 2,
+    "x_degree": 1,
+    "coefficient": "10/27"
+  },
+  {
+    "power": 1,
+    "x_degree": 3,
+    "coefficient": "-512/27"
+  },
+  {
+    "power": 1,
+    "x_degree": 2,
+    "coefficient": "304/9"
+  },
+  {
+    "power": 1,
+    "x_degree": 1,
+    "coefficient": "-20/9"
+  },
+  {
+    "power": 1,
+    "x_degree": 0,
+    "coefficient": "1/27"
+  },
+  {
+    "power": 0,
+    "x_degree": 3,
+    "coefficient": "-256/27"
+  },
+  {
+    "power": 0,
+    "x_degree": 2,
+    "coefficient": "-64/3"
+  },
+  {
+    "power": 0,
+    "x_degree": 1,
+    "coefficient": "16/9"
+  },
+  {
+    "power": 0,
+    "x_degree": 0,
+    "coefficient": "-1/27"
+  }
+]

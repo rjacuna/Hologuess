@@ -1,0 +1,31 @@
+{
+  "jones": {
+    "class_name": "Jones q-holonomic operators",
+    "shared_grace_seconds": 60.0,
+    "pairs": 8,
+    "exact_pairs": 6,
+    "verified_outputs": 14,
+    "censors": [
+      {
+        "case": "5_2",
+        "method": "ore_algebra",
+        "stop_seconds": 60.000172375
+      },
+      {
+        "case": "6_1",
+        "method": "ore_algebra",
+        "stop_seconds": 60.000148458
+      }
+    ],
+    "flint_library_sha256": "dbe416f3951fdf890f8c054f8fa3ab8f4017821e3e30a1377da23a2679b06faf"
+  },
+  "differential": {
+    "class_name": "Differential operators over rational Taylor data",
+    "shared_grace_seconds": 0.5,
+    "pairs": 3,
+    "exact_pairs": 3,
+    "verified_outputs": 6,
+    "censors": [],
+    "flint_library_sha256": "dbe416f3951fdf890f8c054f8fa3ab8f4017821e3e30a1377da23a2679b06faf"
+  }
+}

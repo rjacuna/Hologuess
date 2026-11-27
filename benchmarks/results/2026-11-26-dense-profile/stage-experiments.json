@@ -1,0 +1,92 @@
+{
+  "input_sha256": "a1b50e018d06cdda98dd02ac6a02ba634816061c0515b1db7fe2b7da365039cb",
+  "order": 15,
+  "degree": 15,
+  "fit_terms": 279,
+  "total_terms": 287,
+  "rows": 264,
+  "columns": 256,
+  "input_max_numerator_bits": 3257,
+  "input_max_denominator_bits": 3123,
+  "QQ_matrix_type": "sage.matrix.matrix_rational_dense.Matrix_rational_dense",
+  "exact_reference_kernel": true,
+  "corrupted_vector_rejected": true,
+  "all_modular_matrices_equal": true,
+  "finite_fields": [
+    {
+      "prime": 2130706433,
+      "matrix_type": "sage.matrix.matrix_modn_dense_flint.Matrix_modn_dense_flint"
+    },
+    {
+      "prime": 8388593,
+      "matrix_type": "sage.matrix.matrix_modn_dense_double.Matrix_modn_dense_double"
+    }
+  ],
+  "stages": {
+    "python_QQ_dot_one_pass": {
+      "seconds": [
+        0.7413180419243872,
+        0.7325052912347019,
+        0.7351989578455687
+      ],
+      "median_seconds": 0.7351989578455687
+    },
+    "Sage_QQ_matrix_product": {
+      "seconds": [
+        0.02417166717350483,
+        0.02255537500604987,
+        0.022293916903436184
+      ],
+      "median_seconds": 0.02255537500604987
+    },
+    "2130706433_per_entry_Python_reduction": {
+      "seconds": [
+        0.1688113329000771,
+        0.1635412909090519,
+        0.1622298751026392
+      ],
+      "median_seconds": 0.1635412909090519
+    },
+    "2130706433_Sage_matrix_change_ring": {
+      "seconds": [
+        0.07101720804348588,
+        0.0681093749590218,
+        0.06808866607025266
+      ],
+      "median_seconds": 0.0681093749590218
+    },
+    "2130706433_input_first_derivative_columns": {
+      "seconds": [
+        0.00440562516450882,
+        0.008843415882438421,
+        0.0038528749719262123
+      ],
+      "median_seconds": 0.00440562516450882
+    },
+    "8388593_per_entry_Python_reduction": {
+      "seconds": [
+        0.10686116619035602,
+        0.10836866591125727,
+        0.10807025013491511
+      ],
+      "median_seconds": 0.10807025013491511
+    },
+    "8388593_Sage_matrix_change_ring": {
+      "seconds": [
+        0.07353208400309086,
+        0.009806707967072725,
+        0.009757999796420336
+      ],
+      "median_seconds": 0.009806707967072725
+    },
+    "8388593_input_first_derivative_columns": {
+      "seconds": [
+        0.009137625340372324,
+        0.0062124161049723625,
+        0.006271834019571543
+      ],
+      "median_seconds": 0.006271834019571543
+    }
+  },
+  "timing_scope": "Three repeated stage experiments on already prepared inputs; not cold end-to-end or a solver speedup."
+}

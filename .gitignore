@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.DS_Store
+build/
+dist/
+*.sqlite*
+.ipynb_checkpoints/
+/examples/compare_qhsolve.py
+/examples/hodge.py
+
+# Local benchmark drivers and receipts
+/benchmarks/**/*.py
+/benchmarks/**/*.c
+/benchmarks/results/**/*.zip
+/benchmarks/results/**/*.gz
+/benchmarks/results/**/*.log
+/tests/test_dalg_checker.py
+/tests/test_guess_race.py
+/tests/test_hodge_scaling_benchmark.py

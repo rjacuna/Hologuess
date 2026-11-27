@@ -1,0 +1,104 @@
+{
+  "class_name": "Differential operators over rational Taylor data",
+  "class_grace_seconds": 0.5,
+  "fixed_before_first_pair": true,
+  "kernel_backend": "flint",
+  "flint_library_sha256": "dbe416f3951fdf890f8c054f8fa3ab8f4017821e3e30a1377da23a2679b06faf",
+  "repeats_per_case": 3,
+  "completed_pairs": 9,
+  "censored_pairs": 0,
+  "exact_matching_outputs": 18,
+  "worker_cleanup_passed": true,
+  "comparisons": [
+    {
+      "case": "benchmarks/OrderUpTo30/Dense_r4d26.csv",
+      "order": 4,
+      "degree": 26,
+      "fit_terms": 158,
+      "heldout_terms": 8,
+      "previous_numpy_hologuess_s": 0.1294523337855935,
+      "previous_native_ore_s": 0.12462033377960324,
+      "cold_construction_median_s": {
+        "hologuess": 0.10788674978539348,
+        "ore_algebra": 0.11458454234525561
+      },
+      "cold_construction_samples_s": {
+        "hologuess": [
+          0.11132162483409047,
+          0.10788674978539348,
+          0.10704187490046024
+        ],
+        "ore_algebra": [
+          0.11494279187172651,
+          0.11458454234525561,
+          0.11085749976336956
+        ]
+      },
+      "pair_wins": {
+        "hologuess": 3,
+        "ore_algebra": 0
+      },
+      "exact_matching_outputs": 6
+    },
+    {
+      "case": "benchmarks/OrderUpTo30/Dense_r26d4.csv",
+      "order": 26,
+      "degree": 4,
+      "fit_terms": 162,
+      "heldout_terms": 4,
+      "previous_numpy_hologuess_s": 0.1237577497959137,
+      "previous_native_ore_s": 0.11586999986320734,
+      "cold_construction_median_s": {
+        "hologuess": 0.10956779215484858,
+        "ore_algebra": 0.11472220765426755
+      },
+      "cold_construction_samples_s": {
+        "hologuess": [
+          0.1093793329782784,
+          0.11035216692835093,
+          0.10956779215484858
+        ],
+        "ore_algebra": [
+          0.11172170797362924,
+          0.11472220765426755,
+          0.11480341712012887
+        ]
+      },
+      "pair_wins": {
+        "hologuess": 3,
+        "ore_algebra": 0
+      },
+      "exact_matching_outputs": 6
+    },
+    {
+      "case": "benchmarks/OrderUpTo30/Dense_r5d25.csv",
+      "order": 5,
+      "degree": 25,
+      "fit_terms": 179,
+      "heldout_terms": 8,
+      "previous_numpy_hologuess_s": 0.1544943330809474,
+      "previous_native_ore_s": 0.12269183434545994,
+      "cold_construction_median_s": {
+        "hologuess": 0.12613833276554942,
+        "ore_algebra": 0.11007045768201351
+      },
+      "cold_construction_samples_s": {
+        "hologuess": [
+          0.12532583391293883,
+          0.12613833276554942,
+          0.1265522912144661
+        ],
+        "ore_algebra": [
+          0.1096095833927393,
+          0.11210879171267152,
+          0.11007045768201351
+        ]
+      },
+      "pair_wins": {
+        "hologuess": 0,
+        "ore_algebra": 3
+      },
+      "exact_matching_outputs": 6
+    }
+  ]
+}

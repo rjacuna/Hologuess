@@ -1,0 +1,43 @@
+{
+  "ore_doctest_status": 1,
+  "ore_elapsed_s": 3.124579541850835,
+  "ore_stats": {
+    "ore_algebra.guessing": {
+      "failed": true,
+      "walltime": 1.4697489738464355,
+      "ntests": 28
+    }
+  },
+  "sympy": [
+    {
+      "test": "test_find_simple_recurrence",
+      "status": "passed",
+      "elapsed_s": 0.015784250106662512
+    },
+    {
+      "test": "test_find_simple_recurrence_vector",
+      "status": "passed",
+      "elapsed_s": 0.00017366698011755943
+    },
+    {
+      "test": "test_guess",
+      "status": "passed",
+      "elapsed_s": 0.06422829208895564
+    },
+    {
+      "test": "test_guess_generating_function",
+      "status": "passed",
+      "elapsed_s": 0.06759999971836805
+    },
+    {
+      "test": "test_guess_generating_function_rational",
+      "status": "passed",
+      "elapsed_s": 0.00045116618275642395
+    },
+    {
+      "test": "test_rationalize",
+      "status": "passed",
+      "elapsed_s": 0.00025804201140999794
+    }
+  ]
+}
